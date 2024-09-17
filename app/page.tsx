@@ -39,7 +39,7 @@ export default function Home() {
           </div>
 
           {/* Logo */}
-          <div className="absolute left-1/2 transform sm:-translate-x-1/2 sm:translate-y-1/3">
+          <div className="absolute sm:left-1/2 transform translate-y-14 sm:-translate-x-1/2 sm:translate-y-1/3">
             <img
               className="h-20 sm:h-32 md:h-40 lg:h-60 p-2" // Tailles plus adaptées aux petits écrans
               src="/logo.png"
