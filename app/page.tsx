@@ -98,7 +98,7 @@ export default function Home() {
               <h3 className="text-lg sm:text-2xl">FORMULE</h3>
               <h3 className="text-lg sm:text-2xl font-bold mb-2">DECOUVERTE</h3>
               <p className="text-red-500 font-bold">Session de 5 minutes</p>
-              <p className="text-red-500">en découverte d'un circuit et d'une voiture</p>
+              <p className="text-red-500">en découverte d&apos;un circuit et d&apos;une voiture</p>
             </a>
 
             {/* Formule Warm Up */}
@@ -122,7 +122,7 @@ export default function Home() {
               <h3 className="text-lg sm:text-2xl">FORMULE</h3>
               <h3 className="text-lg sm:text-2xl font-bold mb-2">ENDURANCE</h3>
               <p className="text-red-500 font-bold">Course par équipe</p>
-              <p className="text-red-500">(Minimum 4 personnes Max 8 personnes équipe/heure d'endurance/simulateur)</p>
+              <p className="text-red-500">(Minimum 4 personnes Max 8 personnes équipe/heure d&apos;endurance/simulateur)</p>
             </a>
           </div>
         </div>
