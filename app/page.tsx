@@ -20,7 +20,7 @@ export default function Home() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const mailtoLink = `mailto:contact@speedsensation.com?subject=${encodeURIComponent(`Prise de Contact - ${formData.name}`)}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:Contact@speed-sensation.com?subject=${encodeURIComponent(`Prise de Contact - ${formData.name}`)}&body=${encodeURIComponent(
       `Nom: ${formData.name}\nEmail: ${formData.email}\nAdresse: ${formData.address}\n\nMessage:\n${formData.subject}`
     )}`;
 
@@ -250,7 +250,7 @@ export default function Home() {
             </button>
           </form>
           <h2 className="mt-6 sm:mt-8 text-lg sm:text-xl font-semibold">Téléphone : 06 48 06 14 39</h2>
-          <h2 className="text-lg sm:text-xl font-semibold">Mail : contact@speedsensation.com</h2>
+          <h2 className="text-lg sm:text-xl font-semibold">Mail : Contact@speed-sensation.com</h2>
         </div>  
       </section>
 
