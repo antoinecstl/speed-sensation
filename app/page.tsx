@@ -5,6 +5,7 @@ export default function Home() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone:'',
     address: '',
     subject: '',
   });
@@ -13,7 +14,7 @@ export default function Home() {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value, // Mise à jour des champs de formulaire
+      [name]: value,
     }));
   };
 
@@ -21,7 +22,7 @@ export default function Home() {
     e.preventDefault();
     
     const mailtoLink = `mailto:Contact@speed-sensation.com?subject=${encodeURIComponent(`Prise de Contact - ${formData.name}`)}&body=${encodeURIComponent(
-      `Nom: ${formData.name}\nEmail: ${formData.email}\nAdresse: ${formData.address}\n\nMessage:\n${formData.subject}`
+      `Nom: ${formData.name}\nEmail: ${formData.email}\nTéléphone: ${formData.phone}\nAdresse: ${formData.address}\n\nMessage:\n${formData.subject}`
     )}`;
 
     window.location.href = mailtoLink; // Ouvre le client email
@@ -205,6 +206,22 @@ export default function Home() {
                 id="email"
                 required
                 value={formData.email}
+                onChange={handleChange}
+                className="w-full bg-neutral-800 border border-gray-600 text-white py-2 px-4 rounded-md"
+              />
+            </div>
+
+            {/* Phone */}
+            <div>
+              <label className="block text-white text-lg font-semibold mb-1" htmlFor="email">
+                Votre téléphone (requis)
+              </label>
+              <input
+                type="phone"
+                name="phone"
+                id="phone"
+                required
+                value={formData.phone}
                 onChange={handleChange}
                 className="w-full bg-neutral-800 border border-gray-600 text-white py-2 px-4 rounded-md"
               />
